@@ -1,12 +1,27 @@
+#video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 body {
     background-color: #66ff99;
 }
 
 
+
 main {
+    opacity: 0.8;
+    display: flex;
+}
+
+header {
     align-self: center;
     width: 80%;
-    height: 80%;
+    height: 20%;
     background-color: blueviolet;
     opacity: 0.8;
     margin: 5% 10%;
@@ -29,22 +44,9 @@ h2 {
 
 
 #about {
-    background-color: blueviolet;
+    background-color: green;
     width: 100px;
     height: 100px;
 
 
-}
-
-
-
-
-
-#video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
 }
