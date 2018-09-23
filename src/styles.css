@@ -28,14 +28,32 @@ body {
 
 }
 
+main {
 
+    border-radius: 5%;
+    background-color: beige;
 
-img {
-    opacity: 50%;
+    padding: 5% 5%;
+
 }
 
-header {
+.flexbox {
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    /* background-color: crimson; */
+}
+
+
+
+
+
+header {
+    border-radius: 5%;
+    flex: 1;
     flex-wrap: wrap;
     align-items: center;
     width: 30%;
@@ -55,7 +73,7 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #FF8B2C;
     font-family: 'Luckiest Guy',
         cursive;
@@ -86,21 +104,6 @@ li {
 }
 
 
-main {
-
-    background-color: beige;
-
-    padding: 5% 5%;
-
-}
-
-.flexbox {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-self: center;
-    /* background-color: crimson; */
-}
 
 #logo {
     max-width: 50%;
@@ -108,15 +111,28 @@ main {
 }
 
 #about {
+
     background-color: #f8b195;
     max-width: 50%;
     flex-basis: 50%;
 
 }
 
+#about:hover,
+#edu:hover,
+#git:hover,
+#linkedin:hover,
+#contact:hover {
+
+    background-color: lightskyblue;
+    display: block;
+
+}
+
 #gif {
-    max-width: 50%;
-    flex-basis: 50%;
+
+    width: 50%;
+
 
 }
 
@@ -161,10 +177,7 @@ main {
 
 }
 
-a:hover {
-    font-size: 3rem;
-    color: blue;
-}
+
 
 /*Phone Screen*/
 @media screen and (max-width: 500px) {
@@ -172,16 +185,40 @@ a:hover {
         max-width: 500px;
     }
 
+    header {
+        order: 1;
+    }
 
     #flexbox,
     #container {
         max-width: 500px;
+        flex-direction: column;
+    }
+
+    #gif,
+    #workgif {
+
+        min-width: 90%;
     }
 
     #edu,
     #about,
     #git,
     #linkedin {
-        max-width: 250px;
+        max-width: auto;
+        min-width: 90%;
     }
+
+}
+
+/*Tablet Screen */
+@media screen and (min-width: 501px) and (max-width:960px) {
+    body {
+        max-width: 960px;
+    }
+}
+
+#gif,
+#workgif {
+    min-height: auto;
 }
