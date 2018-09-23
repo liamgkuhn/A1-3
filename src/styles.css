@@ -1,4 +1,5 @@
 #video {
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -7,17 +8,14 @@
     z-index: -1;
 }
 
-#gif {
-    display: flex;
-    flex-shrink: 1;
-}
+
 
 body {
-    background-color: white;
+    background-color: rgb(241, 241, 138);
     width: 90%;
-    height: 90%;
-    opacity: 80%;
-    padding: 5% 5%;
+    height: 190%;
+
+    padding-left: 5%;
 }
 
 .container {
@@ -37,15 +35,15 @@ img {
 
 header {
 
-
+    flex-wrap: wrap;
     align-items: center;
     width: 30%;
     height: 20%;
     background-color: beige;
-    opacity: 0.8;
-    margin: 5% 10%;
 
-    padding: 10px 10px;
+    margin: 5% 5%;
+
+    padding: 5% 10%;
 }
 
 img {
@@ -56,7 +54,7 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     color: black;
     font-family: 'Luckiest Guy',
         cursive;
@@ -64,29 +62,31 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.5rem;
     font-family: 'Luckiest Guy',
         cursive;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     font-family: 'Quattrocento',
         serif;
 }
 
-p {
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Times"
+
+p,
+li {
+    font-size: 1rem;
+    text-align: left;
+    font-family: "Courier New";
 }
 
 
 main {
 
     background-color: beige;
-    opacity: 0.8;
+
     padding: 5% 5%;
 
 }
@@ -99,30 +99,34 @@ main {
     background-color: crimson;
 }
 
+#ralph {
+    height: 100px;
+}
+
 #about {
-    background-color: green;
+    background-color: #f8b195;
     width: 60%;
-    height: 50%;
+    height: fit-content;
 
 
 
 }
 
 #edu {
-    background-color: cyan;
+    background-color: #f67280;
     width: 50%;
 
 
 
 }
 
-#work {
-    background-color: blue;
+#workgif {
+
     width: 50%;
 }
 
 #git {
-    background-color: orange;
+    background-color: #c06c84;
     width: 50%;
     height: 100px;
 
@@ -130,7 +134,7 @@ main {
 }
 
 #linkedin {
-    background-color: fuchsia;
+    background-color: #6c5b7b;
     width: 50%;
     height: 100px;
 
@@ -138,9 +142,15 @@ main {
 }
 
 #contact {
-    background-color: grey;
+    background-color: #355c7d;
     width: 100%;
     height: 100px;
+    text-align: center;
 
 
+}
+
+a:hover {
+    font-size: 3rem;
+    color: blue;
 }
