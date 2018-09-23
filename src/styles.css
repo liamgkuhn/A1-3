@@ -1,0 +1,28 @@
+body {
+    background-color: #66ff99;
+}
+
+
+main {
+    align-self: center;
+    width: 80%;
+    height: 150px;
+    background-color: #262626;
+    margin: 5% 10%;
+
+    padding: 10px 10px;
+}
+
+h1 {}
+
+
+
+
+#video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
