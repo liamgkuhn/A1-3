@@ -11,6 +11,7 @@
 
 
 body {
+
     background-color: rgb(241, 241, 138);
     width: 90%;
     height: 190%;
@@ -55,7 +56,7 @@ img {
 h1 {
     text-align: center;
     font-size: 3rem;
-    color: black;
+    color: #FF8B2C;
     font-family: 'Luckiest Guy',
         cursive;
 }
@@ -63,6 +64,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2.5rem;
+    color: #FF8B2C;
     font-family: 'Luckiest Guy',
         cursive;
 }
@@ -72,6 +74,7 @@ h3 {
     text-align: center;
     font-family: 'Quattrocento',
         serif;
+    color: #FF8B2C;
 }
 
 
@@ -96,25 +99,31 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-self: center;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 
-#ralph {
-    height: 100px;
+#logo {
+    max-width: 50%;
+
 }
 
 #about {
     background-color: #f8b195;
-    width: 60%;
-    height: fit-content;
+    max-width: 50%;
+    flex-basis: 50%;
 
+}
 
+#gif {
+    max-width: 50%;
+    flex-basis: 50%;
 
 }
 
 #edu {
     background-color: #f67280;
-    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
 
 
 
@@ -127,7 +136,8 @@ main {
 
 #git {
     background-color: #c06c84;
-    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
     height: 100px;
 
 
@@ -135,7 +145,8 @@ main {
 
 #linkedin {
     background-color: #6c5b7b;
-    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
     height: 100px;
 
 
@@ -153,4 +164,24 @@ main {
 a:hover {
     font-size: 3rem;
     color: blue;
+}
+
+/*Phone Screen*/
+@media screen and (max-width: 500px) {
+    body {
+        max-width: 500px;
+    }
+
+
+    #flexbox,
+    #container {
+        max-width: 500px;
+    }
+
+    #edu,
+    #about,
+    #git,
+    #linkedin {
+        max-width: 250px;
+    }
 }
