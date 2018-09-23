@@ -7,18 +7,22 @@
     <title>Liam's Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" type="text/css" href="styles.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Quattrocento" rel="stylesheet">
 
 
-<section>
     <video autoplay muted loop id="video">
         <source src="../docs/background.mp4" type="video/mp4">
     </video>
     <audio src="../docs/backtrack.mp3" type="audio/mpeg" autoplay muted autostart loop></audio>
-</section>
+</head>
+
+
+
+
 
 <body>
-    <div id="container">
+    <div class="container">
         <header>
             <h1> Liam Giuliano-Kuhn </h1>
             <h2> Jack Of Some Trades</h2>
@@ -27,30 +31,37 @@
         <img src="../docs/logo.png">
     </div>
     <main>
-
-        <div id="about">
-            <p>About Me</p>
+        <div class="flexbox">
+            <div id="about">
+                <h3>About Me</h3>
+                <p>Hiii too tired to thnik but you get it right,</p>
+            </div>
+            <div id="gif">
+                <video autoplay loop>
+                    <source src="../docs/danger.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
-        <div>
-            <video autoplay loop>
-                <source src="../docs/danger.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div id="edu">
-            <p>Education and Work History</p>
+        <div class="flexbox">
+            <div id="edu">
+                <h3>Education</h3>
+            </div>
+            <div id="work">
+                <h3>Work Experience</h3>
+            </div>
         </div>
 
         <div class="flexbox">
             <div id="git">
-                <p>Link to my GitHub</p>
+                <h3>Link to my GitHub</h3>
             </div>
             <div id="linkedin">
-                <p>Link to my LinkedIn</p>
+                <h3>Link to my LinkedIn</h3>
             </div>
         </div>
 
         <div id="contact">
-            <p>blah blah call me</p>
+            <h3>blah blah call me</h3>
         </div>
 
     </main>
